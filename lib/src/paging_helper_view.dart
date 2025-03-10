@@ -173,10 +173,11 @@ final class _EndErrorItemView extends StatelessWidget {
                   children: [
                     IconButton(
                       onPressed: onPressed,
-                      icon: const Icon(Icons.refresh),
+                      icon: Icon(Icons.refresh, color: Theme.of(context).iconTheme.color),
                     ),
                     Text(
                       error.toString(),
+                      style: Theme.of(context).textTheme.titleMedium,
                     ),
                   ],
                 ),
