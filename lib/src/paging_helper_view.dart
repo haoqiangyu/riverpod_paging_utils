@@ -54,9 +54,12 @@ final class PagingHelperView<D extends PagingData<I>, I>
                 children: [
                   IconButton(
                     onPressed: onPressed,
-                    icon: const Icon(Icons.refresh),
+                    icon: Icon(Icons.refresh, color: Theme.of(context).iconTheme.color),
                   ),
-                  Text(e.toString()),
+                  Text(
+                    e.toString(),
+                    style: Theme.of(context).textTheme.titleMedium,
+                  ),
                 ],
               ),
             );
